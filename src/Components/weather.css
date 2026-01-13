@@ -2,7 +2,7 @@
     place-self: center;
     padding: 40px;
     border-radius: 10px;
-    background-image: linear-gradient(45deg, rgb(55, 104, 240), rgb(3, 8, 150));
+    background-image: linear-gradient(45deg, rgb(84, 123, 230), rgb(25, 32, 237));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,40 @@
     display: flex;
     align-items: center;
     color: #fff;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+.Location_nav {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    margin: 15px 0;
+    gap: 50px;
+}
+.Location_nav .Location_nav_title {
+    display :flex;
+}
+.Location_nav .Location_nav_title .Location_nav_icon{
+    color: #FFC107;
+    font-size: 24px;
+}
+.Location_nav .Location_nav_title .Location_nav_text {
+    font-size: 20px;
+    padding-left: 5px;
+}
+.Location_nav .Location_nav_action {
+    display: flex;
+}
+.Location_nav .Location_nav_action .Location_nav_addBtn {
+    width: 20px;
+    padding: 10px;
+    border-radius: 60%;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+}
+.Location_nav .Location_nav_action .Location_nav_addBtn:hover,
+.Location_nav .Location_nav_action .Location_nav_addBtn:focus {
+    background-color: #FFC107;
 }
 .searchBox {
     display: flex;
@@ -37,95 +70,72 @@
     background: #eef4f3;
     cursor: pointer;
 }
+.searchBox .search-icon:hover,
+.searchBox .search-icon:focus {
+    background-color: #FFC107;
+}
 .currentDateTime {
     display: block;
     align-items: center;
-    color: #cedfea;
     margin-top: 10px;
-}
-.weather-icon {
-    display: flex;            
-    align-items: center;   
-    flex-direction: column;    
-    gap: 0px;
-    color: #FFC107;
-    font-size: 50px;
-}
-.weather-icon img {
-    width: 150px;            
-    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
-}
-.weather-icon .weather-description {
-    font-size: 20px;
-    color: #cedfea;
-    line-height: 1;
+    color: #fff;
+    font-size: 18px;
 }
 .temperature {
     display: block;
     margin-top: 40px;
+    margin-bottom: 40px;
     align-items: center;
     color: #fff;
 }
 .temperature .degrees {
-    font-size: 80px;
+    font-size: 120px;
     line-height: 1;
 }
 .temperature .location {
-    font-size: 32px;
+    font-size: 50px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
-.weather-data {
+.temperature span {
+    color: #dde7ed;
+    font-size: 15px;
+    font-weight: 600;
+}
+.forecast {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    color: #fff;
-}
-.weather-data .col {
-    display: flex;
-    align-items: flex-start;
-    font-size: 22px;
-    gap: 12px
-}
-.col .humidity-icon, 
-.col .wind-icon {
-    width: 26px;
+    flex-wrap: wrap;
     margin-top: 10px;
+    font-size: 12px;
     color: #fff;
+    justify-content: flex-start;
 }
-.col span {
+.forecast .forecast-date {
+    font-style: italic;
+}
+.forecast .forecast-day {
+    font-style: italic;
+}
+.forecast .forecast-item {
+    display: flex;
+    flex-direction: column;           
+    text-align: center;
+    flex: 0 0 calc(33.333% - 5px);
+}
+.forecast-item img {
+    width: 80px;
+    height: 80px;
     display: block;
+    margin: 0 auto;
+}
+.forecast-item .forecast-temp {
+    line-height: 0;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+.forecast-item .forecast-time {
+    font-weight: 600;
     font-size: 16px;
-}
-.Location_nav {
-    display: flex;
-    color: #fff;
-    align-items: center;
-    margin: 15px 0;
-    gap: 50px;
-}
-.Location_nav .Location_nav_title {
-    display :flex;
-}
-.Location_nav .Location_nav_title .Location_nav_icon{
-    color: #FFC107;
-    font-size: 28px;
-}
-.Location_nav .Location_nav_title .Location_nav_text {
-    font-size: 22px;
-}
-.Location_nav .Location_nav_action {
-    display: flex;
-}
-.Location_nav .Location_nav_action .Location_nav_addBtn {
-    width: 20px;
-    padding: 10px;
-    border-radius: 60%;
-    background: #eef4f3;
-    cursor: pointer;
-    color: #000;
-}
-.temperature .feels_like_temp {
-    font-size: 15px;
-    padding-left: 40px;
-    color: #cedfea;
 }

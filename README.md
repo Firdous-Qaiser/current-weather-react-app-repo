@@ -50,3 +50,4 @@ Jest testing has been implemented to ensure component reliability and applicatio
 git clone https://github.com/your-username/react-weather-app-repo.git
 cd react-weather-app-repo
 npm install
+npm run dev
